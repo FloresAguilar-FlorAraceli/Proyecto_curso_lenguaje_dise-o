@@ -1,0 +1,43 @@
+/* Contenedor de las tarjetas */
+.cards-container {
+  display: flex; /* Usa flexbox para alinear las tarjetas horizontalmente */
+  justify-content: center; /* Centra las tarjetas dentro del contenedor */
+  gap: 20px; /* Espacio entre las tarjetas, aumentado para una mejor visibilidad */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea si es necesario */
+  margin: 0px 0; /* Margen superior e inferior para separar las tarjetas del encabezado */
+}
+
+/* Estilos para cada tarjeta */
+.card {
+  background-color: #fff; /* Fondo blanco para las tarjetas */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado más visible */
+  padding: 20px;
+  width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+  max-width: 300px; /* Ancho máximo para cada tarjeta */
+  text-align: center; /* Centra el texto dentro de la tarjeta */
+  min-height: 200px; /* Altura mínima para asegurar que el contenido y el sombreado sean visibles */
+  margin: 10px; /* Espacio entre las tarjetas y su contenedor */
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20PX;
+  margin-bottom: 1px;
+  color: #6F91B4;
+}
+
+.card-image {
+  margin-bottom: 1px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Estilos para el contenido de la tarjeta */
+.card-content {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15PX; /* Tamaño del texto del contenido */
+  margin-bottom: 5px;
+
+}

@@ -1,0 +1,30 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado más visible */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+  }
+  
+  .contact-form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado más visible */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    
+
+  }
+  

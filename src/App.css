@@ -1,38 +1,59 @@
+/* Estilo principal de la aplicación */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Encabezado con diseño en columnas */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #2C2C2C;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between; /* Distribuye el espacio entre el logo y el menú */
+  padding: 0 20px; /* Espacio en los bordes del encabezado */
+  color: #a9a9a9;
+  position: relative;
+}
+
+/* Logo del encabezado */
+.logo {
+  font-size: 1.5em; /* Tamaño del logo, ajusta según sea necesario */
+  color: white; /* Color del logo */
+}
+
+/* Estilo para el menú de navegación */
+nav {
+  display: flex; /* Alinea los elementos dentro del contenedor de navegación */
+}
+
+.tabs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Alinea los elementos horizontalmente */
+}
+
+.tabs li {
+  margin: 0 10px; /* Espacio horizontal entre los botones */
+}
+
+.tabs a {
+  color: #a9a9a9;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: block;
+}
+
+.tabs a:hover {
+  background-color: #a9a9a9;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabs a.active {
+  background-color: #2C2C2C;
+  color: white;
+  border-color: #2C2C2C;
 }

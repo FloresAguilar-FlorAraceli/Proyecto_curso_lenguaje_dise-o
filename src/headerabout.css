@@ -1,0 +1,146 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone|Montserrat:700');
+
+/* Variables de color */
+:root {
+  --white: #fff;
+  --background-transition: 500ms ease-in-out;
+}
+
+/* Estilos globales */
+body, html, #app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Antic Didone', serif;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 760px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 820px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 980px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1060px) {
+  body {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+/* Estilo para el contenedor principal */
+#app {
+  position: relative;
+  animation: fadeIn 500ms ease-in-out forwards;
+}
+
+/* Estilos para la sección del panel */
+.wrapper {
+  width: 100%;
+  height: 50vh; /* Ajusta el valor según tus necesidades */
+  background-size: cover;
+  transition: background-image var(--background-transition);
+}
+
+.panel {
+  width: 40vw;
+  height: 50vh; /* Ajusta el valor según tus necesidades */
+  opacity: 0.9;
+  color: var(--white);
+  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.3);
+  transition: background var(--background-transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panel-header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+.panel-info {
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.panel-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Añadido transform */
+    text-decoration: none; /* Asegúrate de que el Link no tenga subrayado */
+  }
+  
+  .panel-button:hover {
+    color: var(--white); /* O el color que desees */
+    transform: scale(1.05); /* Escala para una animación de zoom */
+  }
+  
+/* Estilos para los selectores */
+.selectors {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .selector {
+    border: 1px solid var(--white);
+    background: none;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin: 5px 0;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Añadido transform */
+  }
+  
+  .selector:hover,
+  .selector.active {
+    background: var(--white);
+    opacity: 0.9;
+    transform: scale(1.3); /* Aumenta el tamaño del selector al ser activo o en hover */
+  }
+  
